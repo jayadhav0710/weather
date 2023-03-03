@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="./index.css"/>
+  
+</head>
+<body>
+  <div class="root">
+    <div id="header">
+      <h1>JAY Weather App</h1>
+    </div>
+    <div class="main-container">
+      <div class="left-main-container">
+        <div class="left-items">
+          <button id="getWatherbtn">Get Weather</button>
+          <table frame="box" rules="all" id="left-table">
+            <tr>
+              <th>City</th>
+            </tr>
+            <tr>
+              <td id="London">London</td>
+            </tr>
+            <tr>
+              <td id="New York">New York</td>
+            </tr>
+            <tr>
+              <td id="Los Angeles">Los Angeles</td>
+            </tr>
+            <tr>
+              <td id="Las Vegas">Las Vegas</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="right-main-container">
+        <div class="search-container">
+          <input type="text" id="input" />
+          <button id="searchBtn" onclick="getWeatherInput()">Search</button>
+        </div>
+        <div id="table-container">
+          <table frame="box" rules="all" id="table">
+            <tr>
+              <th>City</th>
+              <th>Description</th>
+              <th>Temprature</th>
+              <th>Pressure</th>
+              <th>age</th>
+              <th>Data(hrs)</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js" defer></script>
+</body>
+</html>
